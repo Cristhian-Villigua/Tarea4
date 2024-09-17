@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        window.onload = function() {
+            var numero1 = parseInt(prompt("Introduce el primer numero"));
+            var numero2 = parseInt(prompt("Introduce el segundo numero"));
+            var resultado = 0;
+
+            for (let i = 0; i < 5; i++) {
+                switch (i) {
+                    case 0:
+                        resultado = numero1 + numero2;
+                        alert("El resultado de la suma es: " + resultado);
+                        break;
+                    case 1:
+                        resultado = numero1 - numero2;
+                        alert("El resultado de la resta es: " + resultado);
+                        break;
+                    case 2:
+                        resultado = numero1 * numero2;
+                        alert("El resultado de la multiplicación es: " + resultado);
+                        break;
+                    case 3:
+                        resultado = numero1 / numero2;
+                        alert("El resultado de la división es: " + resultado);
+                        break;
+                    case 4:
+                        resultado = (numero1%numero2);
+                        alert("MOD es: " + resultado);
+                        break;
+                    default:
+                        alert("No se ha definido acción para esta iteración.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+</html>
